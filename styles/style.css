@@ -68,6 +68,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.apresentacao__conteudo {
+    opacity: 0; /* Invisível inicialmente */
+    transform: translateY(20px); /* Levemente abaixo da posição inicial */
+    transition: transform 1s ease, opacity 1s ease; /* Transição suave */
+}
+
+.apresentacao__conteudo.aparecer {
+    opacity: 1; /* Tornar visível */
+    transform: translateX(0); /* Mover para a posição original */
+}
+
 .apresentacao__conteudo__titulo1 {
     font-size: 26px;
     font-family: 'Krona One', sans-serif;
